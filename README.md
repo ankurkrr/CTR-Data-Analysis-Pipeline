@@ -1,4 +1,4 @@
-**Web Traffic Click-Through Rate (CTR) Analysis.**
+# Web Traffic Click-Through Rate (CTR) Analysis.
 
 **Overview**
 This project analyzes web traffic data collected over a 7-day period, with the primary focus on Click-Through Rate (CTR) and pageview events. Using Python libraries such as Pandas, SciPy, Matplotlib, and Seaborn, the project aims to uncover insights into the performance of different links and explore strategies to optimize the CTR.
@@ -43,14 +43,14 @@ Visualization: Use Matplotlib and Seaborn to generate histograms, box plots, and
 **Code Example:**
 import pandas as pd
 
-# Load the dataset
+**Load the dataset**
 data = pd.read_csv('traffic.csv')
 
-# Filter pageviews and clicks
+**Filter pageviews and clicks**
 pageviews = data[data['event'] == 'pageview']
 clicks = data[data['event'] == 'click']
 
-# Calculate overall CTR
+**Calculate overall CTR**
 total_pageviews = pageviews.shape[0]
 total_clicks = clicks.shape[0]
 overall_ctr = total_clicks / total_pageviews
